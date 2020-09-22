@@ -1,0 +1,68 @@
+body, html {
+  height: 100%;
+}
+html{
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://i.insider.com/5804e379dd0895c84b8b45ce?width=1067&format=jpeg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  font-size: 18px;
+}
+#navbar{
+  display: block;
+  position:fixed;
+  float: left;
+  top:0px;
+  left:0px;
+  width: 160px;
+  height:100%;
+  background-color: black;
+  padding:5px;
+  padding-top: 20px;
+  margin-top: 0px;
+  z-index: 1;
+  overflow-x: hidden;
+}
+.nav-link{
+  display: block;
+  color: grey;
+  padding: 6px 8px 6px 16px;
+  font-size: 23px;
+}
+.head-links{
+  color: grey;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+a img{
+ display: none;
+}
+a:hover img{
+  display: block;
+  float: right;
+}
+#main-doc{
+  margin-left: 160px;
+  padding: 0px 10px;
+  color: white;
+}
+.main-section{
+  font-weight: bold;
+}
+ul a{
+  color: white;
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
