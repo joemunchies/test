@@ -1,0 +1,68 @@
+html {
+		height: 100%;
+		min-height: 100%;
+	}
+#grid-logo-main{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	"fb-text-logo main"
+	". create-np"
+}
+#fb-text-logo{
+	grid-area: fb-text-logo;
+}
+#create-new-page{
+	grid-area: create-np;
+}
+	#main{
+		grid-area: main;
+		border: 1px solid black;
+		height: 300px;
+		width: 500px;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: 
+		"email"
+		"pass"
+		"connect-btn"
+		"fb-text"
+		"new-acc-btn"
+	}
+		#email{
+			grid-area: email;
+			height: 10px;
+			width: 80%;
+			align-self: center;
+			justify-self: center;
+			border: 1px solid;
+			border-radius: 5px;
+			margin: 5px;
+			
+			
+		}
+		#pass{
+			grid-area: pass;
+			justify-self: center;
+			align-self: center;
+		}
+		#connect-btn{
+			grid-area: connect-btn;
+			justify-self: center;
+			align-self: center;
+		}
+		#fb-text{
+			grid-area: fb-text;
+			justify-self: center;
+			align-self: center;
+		}
+		#new-acc-btn{
+			grid-area:;new-acc-btn;
+			justify-self: center;
+			align-self: center;
+		}
+
+		
+	       
+	
