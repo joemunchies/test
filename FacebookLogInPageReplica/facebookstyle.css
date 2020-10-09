@@ -5,9 +5,11 @@ html {
 #grid-logo-main{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	padding: 11% 20%;
+	background-color: #f0f2f5;
 	grid-template-areas: 
 	"fb-text-logo main"
-	". create-np"
+	". create-np";
 }
 #fb-text-logo{
 	grid-area: fb-text-logo;
@@ -17,40 +19,53 @@ html {
 }
 	#main{
 		grid-area: main;
-		border: 1px solid black;
+		border: 1px solid white;
+		border-radius: 6px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+		box-sizing: border-box;
+		background-color: #fff; 
 		height: 300px;
 		width: 500px;
+		padding: 10px;
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 		grid-template-areas: 
 		"email"
 		"pass"
 		"connect-btn"
 		"fb-text"
+		"hr"
 		"new-acc-btn"
 	}
 		#email{
 			grid-area: email;
-			height: 10px;
-			width: 80%;
-			align-self: center;
 			justify-self: center;
-			border: 1px solid;
-			border-radius: 5px;
-			margin: 5px;
-			
+			align-self: center;
+			width: 100%;
 			
 		}
 		#pass{
 			grid-area: pass;
 			justify-self: center;
 			align-self: center;
+			width: 100%;
 		}
 		#connect-btn{
 			grid-area: connect-btn;
 			justify-self: center;
 			align-self: center;
+			width: 100%;
+		}
+		#connect-btn button{
+			padding: 10px;
+			background-color: #1877f2;
+			border-radius: 6px;
+			border-color: #1877f2;
+			color: #fff;
+		}
+		#new-acc-btn button{
+			padding: 10px;
 		}
 		#fb-text{
 			grid-area: fb-text;
@@ -58,11 +73,57 @@ html {
 			align-self: center;
 		}
 		#new-acc-btn{
-			grid-area:;new-acc-btn;
+			grid-area: new-acc-btn;
 			justify-self: center;
 			align-self: center;
+			width: 60%;
 		}
-
+		#new-acc-btn button{
+			padding: 10px;
+			background-color: #42b72a;
+			border-radius: 6px;
+			border-color: #42b72a;
+			color: #fff;
+		}
+		a{
+			text-decoration: none;
+		}
+		footer a {
+			text-decoration: none;
+			color: #8a8d91;
+		}
+		 a:hover{
+			text-decoration: underline;
+		}
+		#create-new-page a{
+			color: black;
+		}
+		#fb-text a{
+			color: #1877f2;
+		}
+#hr{
+	grid-area: hr;
+	align-self: center;
+	max-height: 2px;
+}
+input{
+	border-radius: 6px;
+	padding: 10px;
+}
+#main input{
+	width: calc(100% - 20px);
+}
+#main button{
+	width: 100%;
+}
+footer a{
+	margin-right: 15px;
+	font-size: 15px;
+}
+footer{
+	padding: 0% 20%;
+}
 		
+
 	       
 	
