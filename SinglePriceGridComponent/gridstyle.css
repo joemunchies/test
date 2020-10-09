@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+html{
+	font-family: 'Karla', sans-serif;
+	font-size: 16px
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+section{
+	min-height: 100vh;
+	width: 100%
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: hsl(204,43%,93%);
+	padding: 100px 30px;
+}
+.container{
+	display: grid;
+	grid-template-columns: 100%;
+	max-width: 550px;
+	margin: 0 auto;
+	border-radius: 8px;
+	box-shadow: 0px 0px 14px 1px #00000024;
+	overflow: hidden;
+
+}
+.item{
+	padding: 30px;
+}
+
+.item1 {
+	background-color: white;
+} 
+
+.item1 h2{
+	color: hsl(179, 62%, 36%);
+	font-weight: 700;
+	font-size: 1.3rem;
+	margin-bottom: 15px;
+}
+
+.item1 h3{
+	color: hsl(71, 73%, 54%);
+	font-size: 700;
+	font-size: 1rem;
+	margin-bottom: 15px;
+}
+
+.item1 p{
+	color:	hsl(218, 22%, 67%);
+	font-size:  1rem;
+	line-height: 1.5rem;
+}
+
+.item2{
+	background-color: hsl(179, 62%, 43%);
+}
+
+.item2 h3{
+	color: white;
+	font-weight: 700;
+	font-size: 2rem;
+	margin-bottom: 15px;	
+}
+
+.item2 p{
+	color: hsl(204; 43%; 93%);
+	font-size: 1rem;
+	font-weight: 400px;
+	margin-bottom: 10px;
+}
+
+.item2 p span{
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.item2 .button{
+	text-align: center;
+	width: 100%;
+	padding: 15px;
+	background-color: hsl(71, 73%, 54%);
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	margin-top: 30px;
+	font-weight: 700;
+	box-shadow: 0 px 4px 10px 1px #00000033;
+	border-radius: 8px;
+}
+.item3{
+	background-color: #4abebd;
+}
+.item3 h3{
+	color: white;
+	font-weight: 400;
+	font-size: 1.3rem;
+	margin-bottom: 15px;
+}
+.item3 p{
+	color: hsl(204; 43%, 93%);
+	line-height: 1.5rem;
+}
+@media only screen and (min-width: 768px){
+	.container {
+		grid-template-columns: 50% 50%;
+	}
+	.item1{
+		grid-area: 1/ 1/ 2/ 3;
+	}
+	.item2 .item3{
+		grid-row: 2;
+	}
+}
